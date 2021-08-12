@@ -29,7 +29,7 @@ function eventListener(){
 
 // Funciones
 function iniciarApp(){
-    btnEnviar.disbled = true;
+    btnEnviar.disabled = true;
     btnEnviar.classList.add('cursor-not-allowed', 'opacity-50');
 }
 
@@ -68,7 +68,7 @@ function validarFormulario(e){
     }
 
     if(er.test(email.value) && asunto.value !== '' && mensaje.value !== ''){
-        btnEnviar.disbled = false;
+        btnEnviar.disabled = false;
         btnEnviar.classList.remove('cursor-not-allowed', 'opacity-50');
     }
 }
